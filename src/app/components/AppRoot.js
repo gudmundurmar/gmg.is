@@ -12,7 +12,6 @@ class AppRoot extends React.Component {
         return (
             <div className="appRoot">
                 <h1>{config.title}</h1>
-                <Cart cart={this.props.state.cart} />
             </div>);
     }
 }

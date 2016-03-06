@@ -20344,8 +20344,7 @@
 	                    'h1',
 	                    null,
 	                    _app2.default.title
-	                ),
-	                _addons2.default.createElement(_Cart2.default, { cart: this.props.state.cart })
+	                )
 	            );
 	        }
 	    }]);

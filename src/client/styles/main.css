@@ -1,5 +1,13 @@
+
+body {
+	font-family: Helvetica; 
+	background-color: #201F1D;
+	background-color: #ffc300;
+}
+h1 {
+	color: #201F1D;
+}
 .appRoot {
-    border: 2px solid blue;
     padding: 10px;
 }
 .cart {
