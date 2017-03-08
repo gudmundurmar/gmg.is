@@ -1,0 +1,39 @@
+.Footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #17baef;
+	color: #fff;
+	height: 20%;
+}
+
+.Footer__socialIcons {
+	display: flex;
+	list-style: none;
+	padding: 10px 0;
+	margin-bottom: 0;
+}
+
+.Footer__socialIcon {
+	padding-right: 5px;
+	padding-left: 5px;
+	color: #fff;
+}
+
+.Footer__socialIconLink {
+	background: #0c86ae;
+	width: 48px;
+	height: 48px;
+	text-align: center;
+	padding-top: 12px;
+	border-radius: 50%;
+	background-clip: padding-box;
+	margin-right: 8px;
+	float: left;
+	text-decoration: none;
+}
+
+.Footer__fontAwesomeIcon:before {
+	font-size: 26px;
+	color: #fff;
+}

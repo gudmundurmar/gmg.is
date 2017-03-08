@@ -1,0 +1,68 @@
+//Hand
+.Hand {
+	display: flex;
+	height: 6vh;
+	fill:#17baef;
+	fill-rule:evenodd;
+	stroke-linecap:butt;
+	stroke-linejoin:miter;
+	stroke-opacity:1;
+	transform-origin: center bottom;
+}
+
+.Hand:hover {
+	animation: wave 1s ease-out 1;
+	animation-direction: alternate;
+}
+
+.Hand__pinkyFingerTip,
+.Hand__ringFingerTip,
+.Hand__middleFingerTip {
+	animation: bend-finger-tips 10s ease-in 1;
+	animation-delay: 5s;
+	transform-origin: center bottom;
+}
+
+.Hand__pinkyFingerCenter,
+.Hand__ringFingerCenter,
+.Hand__middleFingerCenter {
+	animation: bend-finger 10s ease-in 1;
+	animation-delay: 5s;
+	transform-origin: center bottom;
+}
+@keyframes bend-finger-tips {
+	1% {
+		transform: translateY(75px) scale(0.8) rotateX(170deg) rotateZ(-20deg) translateX(-45px);
+	}
+	90% {
+		transform: translateY(75px) scale(0.8) rotateX(170deg) rotateZ(-20deg) translateX(-45px);
+	}
+}
+
+@keyframes bend-finger {
+	1% {
+		transform: scale(0.8) rotateX(80deg) rotateZ(-20deg);
+	}
+	70% {
+		transform: scale(0.8) rotateX(80deg) rotateZ(-20deg);
+	}
+}
+
+
+@keyframes wave {
+	10% {
+		transform: rotateZ(30deg)
+	}
+	25% {
+		transform: rotateZ(-20deg)
+	}
+	33% {
+		transform: rotateZ(30deg)
+	}
+	50% {
+		transform: rotateZ(-10deg)
+	}
+	80% {
+		transform: rotateZ(0)
+	}
+}
