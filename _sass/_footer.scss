@@ -33,6 +33,11 @@
 	text-decoration: none;
 }
 
+.Footer__socialIconLink:hover, .Footer__socialIconLink:focus {
+	background: #ff6161;
+	outline: none;
+}
+
 .Footer__fontAwesomeIcon:before {
 	font-size: 26px;
 	color: #fff;

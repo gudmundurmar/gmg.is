@@ -1,0 +1,7 @@
+<h1>
+I might keep some todo lists here...
+</h1>
+<p>Here I'm just going to put what I'm working on</p>
+{% for list in site.lists %}
+{{ list.content | replace: '<li>[ ]', '<li class="checkbox"><input type="checkbox" disabled />' | replace: '<li>[x]', '<li class="checkbox"><input type="checkbox" checked disabled />'  }}
+{% endfor %}

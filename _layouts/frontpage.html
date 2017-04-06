@@ -3,29 +3,16 @@ layout: default
 ---
 
 <section class="Frontpage">
-  <h1 class="Frontpage--title">GMG.is/<span class="Frontpage--titleAbout Frontpage--titleLink__hidden">introducing-himself</span><span class="Frontpage--titleWorking Frontpage--titleLink__hidden">working</span><span class="Frontpage--titleLearning Frontpage--titleLink__hidden">learning</span><span class="Frontpage--titleMusic Frontpage--titleLink__hidden">playing-music</span><span class="Frontpage--cursor">|</span>
+  <h1 v-bind:class="['Frontpage__title', false && 'Frontpage__title--topbar']">GMG.is{%raw%}{{ path }}{%endraw%}<span class="Frontpage__cursor">|</span>
   </h1>
-  <div class="Frontpage--links">
-    <div class="Frontpage--linkContainer">
-      <div class="Frontpage__person">
-        {% include svg/GMG_face.html %}
-        {% include svg/hand.html %}
-      </div>
-      <a href="/about" class="Frontpage--link Frontpage--link__about">introducing-himself/</a>
-      <p class="Frontpage__linkContainerSubtext">Hello, my name is Gudmundur Mar and I'm an Icelandic/American dual citizen. Nice to meet you.</p>
-    </div>
-    <div class="Frontpage--linkContainer">
-      <a href="/working" class="Frontpage--link Frontpage--link__working">working/</a>
-      <p class="Frontpage__linkContainerSubtext">I've worked as a frontend developer for a few years for a flight search company, but also worked quite a bit with kids. Recently been enabling surgeons to control images in the surgical operating room hands free.</p>
-    </div>
-    <div class="Frontpage--linkContainer">
-      <a href="/" class="Frontpage--link 
-      Frontpage--link__learning">learning/</a>
-      <p class="Frontpage__linkContainerSubtext">Hello, my name is Gudmundur Mar and I'm an Icelandic/American dual citizen. Nice to meet you.</p>
-    </div>
-    <div class="Frontpage--linkContainer">
-      <a href="/" class="Frontpage--link Frontpage--link__music">playing music/</a>
-      <p class="Frontpage__linkContainerSubtext">Hello, my name is Gudmundur Mar and I'm an Icelandic/American dual citizen. Nice to meet you.</p>
+  <h2>Welcome to my site. </h2>
+  <p class="Frontpage__subtext">
+    I set this up in order to be able to easily have a platform to try new things, and share my <a href="/blog">thoughts</a>. If you have any questions or want to get in touch then please feel free to <a title="gmg@gmg.is">contact me</a>
+  </p>
+  <div class="Frontpage__links">
+    <div class="Frontpage__person">
+      {% include svg/GMG_face.svg %}
+      {% include svg/hand.svg %}
     </div>
   </div>
 </section>

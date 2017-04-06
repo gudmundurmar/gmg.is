@@ -1,0 +1,21 @@
+.Tags__list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 5px;
+  justify-content: stretch;
+}
+
+.Tags__listItem {
+  border-radius: 3px;
+  border: solid 1px #428bca;
+  color: #428bca;
+  padding: 5px;
+  margin-right: 5px;
+  margin: 5px 5px 5px 0;
+}
+
+.Tags__listItem:hover {
+  color: #17baef;
+  border-color: #17baef;
+}

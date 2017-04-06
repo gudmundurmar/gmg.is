@@ -8,10 +8,11 @@
 	stroke-linejoin:miter;
 	stroke-opacity:1;
 	transform-origin: center bottom;
+	animation: wave 0.7s 2s linear 1;
 }
 
 .Hand:hover {
-	animation: wave 1s ease-out 1;
+	animation: wave 1s linear 1;
 	animation-direction: alternate;
 }
 
@@ -19,7 +20,7 @@
 .Hand__ringFingerTip,
 .Hand__middleFingerTip {
 	animation: bend-finger-tips 10s ease-in 1;
-	animation-delay: 5s;
+	animation-delay: 7s;
 	transform-origin: center bottom;
 }
 
@@ -27,7 +28,7 @@
 .Hand__ringFingerCenter,
 .Hand__middleFingerCenter {
 	animation: bend-finger 10s ease-in 1;
-	animation-delay: 5s;
+	animation-delay: 7s;
 	transform-origin: center bottom;
 }
 @keyframes bend-finger-tips {

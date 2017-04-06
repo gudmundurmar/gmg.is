@@ -1,12 +1,11 @@
-<header class="header navbar-fixed-top">
-  <div class="container">
-    <nav id="main-nav" class="main-nav navbar-right">
-      <ul class="nav navbar-nav">
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/cv">CV</a></li>
-        <li><a href="/blog">Blog</a></li>
-      </ul>
-    </nav>
-  </div>
+<header class="Header">
+  <ul class="Header__menu">
+    <header-links v-for="message in messages" v-if="message.path != this.location.pathname" :message='message' :isactive='isactive' :notactive='notactive' :clicked='clicked' :active='active'>
+    </header-links>
+  </ul>
+  {% if page.url != '/' %}
+    <h1 v-bind:class="['Header__title', false && 'Header--topbar']">
+      GMG.is{%raw%}{{ path }}{%endraw%}<span class="Header__cursor">|</span>
+    </h1>
+  {% endif %}
 </header>
