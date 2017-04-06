@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<section class="Frontpage">
+  <h1 v-bind:class="['Frontpage__title', false && 'Frontpage__title--topbar']">GMG.is{%raw%}{{ path }}{%endraw%}<span class="Frontpage__cursor">|</span>
+  </h1>
+  <h2>Welcome to my site. </h2>
+  <p class="Frontpage__subtext">
+    I set this up in order to be able to easily have a platform to try new things, and share my <a href="/blog">thoughts</a>. If you have any questions or want to get in touch then please feel free to <a title="gmg@gmg.is">contact me</a>
+  </p>
+  <div class="Frontpage__links">
+    <div class="Frontpage__person">
+      {% include svg/GMG_face.svg %}
+      {% include svg/hand.svg %}
+    </div>
+  </div>
+</section>

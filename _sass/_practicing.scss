@@ -1,0 +1,172 @@
+.Practicing {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.Practicing__project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 48%;
+  margin: 1%;
+  min-width: 300px;
+  box-shadow: 1px 0 2px #333;
+}
+
+.Practicing__image svg {
+  padding: 10px 0;
+  padding-right: 20px;
+  height: 100px;
+  fill: #428bca;
+}
+
+.Practicing__imageAndLinkContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Practicing__linkList {
+  list-style-type: none;
+}
+
+.Practicing__linkListItemTag {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Practicing__titleContainer, .Practicing__contactContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+}
+
+.Practicing__tag {
+  color: #428bca;
+  border: #428bca solid 1px;
+  padding: 3px;
+  margin: 3px;
+  border-radius: 3px;
+}
+
+.Practicing__tag:hover, .Practicing__tag:focus {
+  color: red;
+  border: red 1px solid;
+}
+
+.Practicing__music {
+  background-color: #eee;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.Practicing__musicLoadingContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+}
+
+.Practicing__musicPlayIcon {
+  font-size: 3em;
+  padding: 10px;
+}
+
+.Practicing__musicPlayerLoadingBar  {
+  // animation: loading 2s ease-out 50;
+  animation: load 0.3s ease-out 50;
+  background-image: linear-gradient(
+    -45deg, 
+    rgba(255, 255, 255, 0.5) 0%, 
+    rgba(255, 255, 255, 0.5) 10%, 
+    transparent 20%, 
+    transparent 30%, 
+    rgba(255, 255, 255, 0.5) 40%, 
+    rgba(255, 255, 255, 0.5) 50%, 
+    transparent 60%, 
+    transparent 70%,
+    rgba(255, 255, 255, 0.5) 80%, 
+    rgba(255, 255, 255, 0.5) 90%, 
+    transparent 
+  );
+  height: 10px;
+  width: 100px;
+  background-color: #428bca;
+  border-color: #eee;
+}
+
+.Practicing__musicPlayerIframe {
+  z-index: 1;
+}
+
+@keyframes load {
+  66% {
+    background-image: linear-gradient(
+      -45deg, 
+      transparent 0%, 
+      transparent 10%, 
+      rgba(255, 255, 255, 0.5) 20%, 
+      rgba(255, 255, 255, 0.5) 30%, 
+      transparent 40%, 
+      transparent 50%, 
+      rgba(255, 255, 255, 0.5) 60%, 
+      rgba(255, 255, 255, 0.5) 70%,
+      transparent 80%, 
+      transparent 90%, 
+      rgba(255, 255, 255, 0.5) 
+    );
+  33% {
+    background-image: linear-gradient(
+      -45deg, 
+      transparent 0%, 
+      rgba(255, 255, 255, 0.5) 10%, 
+      rgba(255, 255, 255, 0.5) 20%, 
+      transparent 30%, 
+      transparent 40%, 
+      rgba(255, 255, 255, 0.5) 50%, 
+      rgba(255, 255, 255, 0.5) 60%, 
+      transparent 70%,
+      transparent 80%, 
+      rgba(255, 255, 255, 0.5) 90%, 
+      rgba(255, 255, 255, 0.5) 
+    );
+  }
+  }
+}
+
+@keyframes loading {
+  25% {
+    border-radius: 50%;
+    width: 88px;
+    padding-left: 25px;
+    margin: 0;
+  }
+  40% {
+    padding-left: 0px;
+    margin-left: -5px;
+  }
+  45% {
+    width: 0px;
+    border-radius: 0px;
+    padding-left: 0;
+  }
+  55% {
+    width: 0px;
+    border-radius: 0px;
+    padding-left: 0;
+  }
+  75% {
+    padding-left: 25px;
+    width: 88px;
+    border-radius: 50%;
+  }
+  100% {
+    border-radius: 0%;
+  }
+}

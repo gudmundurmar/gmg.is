@@ -1,0 +1,41 @@
+---
+permalink: /404.html
+---
+<head>
+<style>
+body {
+  font-family: 'Lato', arial, sans-serif;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 30px;
+}
+.GMGFace {
+  width: 40%;
+  padding: 0 10%;
+}
+.Hand {
+    width:18%;
+    transform: rotateZ(20deg);
+}
+.Hand:first-child {
+  transform: rotateY(180deg) rotateZ(20deg);
+}
+h1, h2 {
+  padding: 0;
+  margin:0;
+}
+</style>
+</head>
+<body>
+  {% include svg/hand.svg %}
+  {% include svg/GMG_face.svg %}
+  {% include svg/hand.svg %}
+  <div>
+    <h1>Alright, you got me. </h1><h2>I must have broken a link or something</h2>
+    <p>I'm very sorry about breaking it. Just send me a line and I'll fix it. I'm @gudmundurmar on Twitter</p><p>Or maybe you were just looking for me. In that case you found me. Then just send "found you!" on Twitter, then go hide, and I'll look for you.</p>
+    <a href="/">If you want to try to get back to my site then just click here</a>
+  </div>
+</body>

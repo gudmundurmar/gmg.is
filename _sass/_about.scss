@@ -1,0 +1,40 @@
+.About {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.About__nameContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.About__name {
+  flex-basis: 25%;
+  min-width: 300px;
+  padding: 20px;
+  background-color: white;
+}
+
+.About__title {
+  font-size: 2em;
+  color: #17baef;
+  float: left;
+}
+
+.About__icon {
+  font-size: 1.4em;
+  margin-right: 10px;
+}
+
+.About__nameTitle {
+  font-size: 1.3em;
+}
+
+.About__nameTitleContainer {
+  display: flex;
+  align-items: center;
+  padding-bottom: 15px;
+}

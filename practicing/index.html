@@ -1,0 +1,43 @@
+---
+layout: default
+title: GMG.is/practicing
+---
+
+<div class="Practicing">
+  
+  {% for project in site.posts%}
+    {% if project.category == 'Projects' %}
+      <div class="Practicing__project">
+        <div class="Practicing__titleContainer">
+          <h1>{{ project.title }}</h1>
+          <div class="Practicing__imageAndLinkContainer">
+            {% if project.image %}
+              <div class="Practicing__image">
+                {% include {{project.image}} %}
+              </div>
+            {% endif %}
+            <ul class="Practicing__linkList">
+              <li>
+                {% if project.link %}
+                  <a href={{ project.link }} target="_blank"><i class="fa fa-link" aria-hidden="true"></i> Link to {{project.title}}</a>
+                {% endif %}
+              </li>
+              <li class="Practicing__linkListItemTag">
+                {% for tag in project.tags%}
+                  <a href="{{ site.baseurl }}{{ site.tag_page }}#{{ tag | slugify }}" class="Practicing__tag">
+                    <i class="fa fa-tag Practicing__iconTag" aria-hidden='true'></i>
+                    {{ tag }}
+                  </a>
+                {% endfor %}
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="Practicing__contactContainer">
+          {{ project.content }}
+        </div>
+      </div>
+    {% endif %}
+  {% endfor %}
+  
+</div>

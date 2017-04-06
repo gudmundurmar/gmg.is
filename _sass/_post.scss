@@ -1,0 +1,53 @@
+.Post {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 40px;
+  padding: 40px;
+  box-shadow: -3px 0px 0px #17baef;
+}
+
+.Post__date {
+  font-size: 1em;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.Post__link {
+  display: block;
+  font-size: 1em;
+}
+
+.Post__iconCalendar, .Post__iconDate {
+  margin-right: 10px;
+}
+
+.Post__iconTag {
+}
+
+.Post__listItemTags {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Post__tagList {
+  list-style-type: none;
+}
+
+.Post__tag {
+  border-radius: 3px;
+  border: solid 1px #428bca;
+  color: #428bca;
+  padding: 5px;
+  margin-right: 5px;
+  margin: 10px 5px 10px 0;
+}
+
+.Post__tag:hover {
+  color: #17baef;
+  border-color: #17baef;
+}
+
+.Post__content {
+  margin-top: 20px;
+}
