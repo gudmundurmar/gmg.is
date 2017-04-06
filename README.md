@@ -1,4 +1,4 @@
-To run locally you need to run
-`gem install jekyll-coffeescript`
+To run have Jekyll set up.
+You'll need to run `gem install jekyll-livereload` for the live reload to work.
 
-and have Jekyll set up.
+To use the live reload just type `jekyll serve -L --watch`
