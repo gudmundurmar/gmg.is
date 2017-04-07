@@ -1,9 +1,14 @@
 var headerLinks = {
-  props: ['message', 'active', 'isactive', 'notactive', 'clicked'],
+  props: ['message', 'active', 'isactive', 'notactive', 'clicked', 'baseurl'],
+  methods: {
+    getBaseUrl(base, pathname) {
+      return base + pathname;
+    }
+  },
   template: `<a
-      :href="message.path"
+      :href=getBaseUrl(baseurl,message.path)
       @focus="isactive(message)"
-      @mouseenter="isactive(message)"
+      @mouseenter="isactive(message, this)"
       @mouseleave="notactive(this.location.pathname)"
       @blur="notactive(this.location.pathname)"
       @click="clicked"
@@ -58,19 +63,22 @@ new Vue({
     'header-links': headerLinks,
   },
   methods: {
-    isactive(message) {
-      console.log('Youre really hovering', message.name);
+    isactive(message, bla) {
       this.path = message.path;
       this.active = message.name;
     },
-    notactive(path) {
-      console.log('Not active');
+    notactive(fullpath) {
       this.active = "";
-      this.path = path;
+      if (fullpath === "/") {
+        this.path = fullpath;
+        return;
+      }
+      parts = fullpath.split('/');
+      path = parts.pop() || parts.pop();
+      this.path = '/' + path + '/';
     },
     clicked(e) {
       this.active = message.name;
-      console.log('what was clicked', e);
     }
   }
 });
