@@ -11,3 +11,6 @@ collections:
 - lists
 tag_page: '/thinking/tags/'
 category_page: '/thinking/categories/'
+sass:
+  sass_dir: _sass
+  style: compressed
