@@ -14,53 +14,17 @@
   border-radius: 0;
   flex-direction: column;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+  font-size: 2rem;
 }
 
 
 .Header__title {
   margin: 0;
   padding: 10px 20px;
-  font-size: 1.6em;
+  font-size: 3rem;
   color: hsl(0,100%,69%);
   font-weight: 700;
   transition: all 0.5s ease-in;
-}
-
-.Header__titleLink {
-  min-width: 48%;
-  outline: none;
-  transition: color 0.5s;
-
-  &::before,
-  &::after {
-    border: 2px solid transparent;
-    top: 0;
-    width: 0;
-    height: 0;
-    box-sizing: border-box;
-    content: '';
-    position: absolute;
-    border-radius: 3px;
-  }
-}
-
-.Header__titleLink:active, .Header__titleLink:hover {
-  color: #17baef;
-}
-
-.Header__titleLink:hover::after, .Header__titleLink:focus::after {
-  height: 100%;
-  border-color: #17baef;
-  transition: width 0.25s ease-out;
-}
-
-.Header__title--topbar {
-  position: absolute;
-  top:0;
-  left: 10px;
-  margin-top: 20px;
-  z-index: 9999; 
-  font-size: 2vw;
 }
 
 .Header__cursor {
@@ -103,30 +67,32 @@
   }
 }
 
-.Header__linkContainer--active {
-  color: red;
-  text-decoration: none !important;
-  outline: none !important;
-  border: none !important;
-}
+@media (pointer:fine) {
+  .Header__linkContainer--active {
+    color: red;
+    text-decoration: none !important;
+    outline: none !important;
+    border: none !important;
+  }
 
-.Header__linkContainer--active::before,
-.Header__linkContainer--active::after {
-  width: 100%;
-  height: 100%;
-}
+  .Header__linkContainer--active::before,
+  .Header__linkContainer--active::after {
+    width: 100%;
+    height: 100%;
+  }
 
-.Header__linkContainer--active::before {
-  border-top-color: red;
-  border-right-color: red;
-  transition: width 0.25s ease-out,
-    height 0.25s ease-out 0.25s;
-}
+  .Header__linkContainer--active::before {
+    border-top-color: red;
+    border-right-color: red;
+    transition: width 0.25s ease-out,
+      height 0.25s ease-out 0.25s;
+  }
 
-.Header__linkContainer--active::after {
-  border-bottom-color: red;
-  border-left-color: red;
-  transition: 
-    height 0.25s ease-out,
-    width 0.25s ease-out 0.25s,
+  .Header__linkContainer--active::after {
+    border-bottom-color: red;
+    border-left-color: red;
+    transition: 
+      height 0.25s ease-out,
+      width 0.25s ease-out 0.25s,
+  }
 }
