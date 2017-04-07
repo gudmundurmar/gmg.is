@@ -6,7 +6,6 @@ permalink: /thinking/:year/:month/:day/:title
 url:
   "https://www.gmg.is"
 gems: [jekyll-livereload]
-baseurl: /gmg.is
 collections:
 - lists
 tag_page: '/thinking/tags/'
