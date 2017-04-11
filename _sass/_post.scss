@@ -5,6 +5,9 @@
   margin: 40px;
   padding: 40px;
   box-shadow: -3px 0px 0px #17baef;
+  @media screen and (max-width: 768px) {
+    margin: 40px 0;
+  }
 }
 
 .Post__date {

@@ -14,14 +14,17 @@
   border-radius: 0;
   flex-direction: column;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
-  font-size: 2rem;
+  font-size:1.3rem;
+  @media screen and (max-width: 786px) {
+    font-size: 4vw;
+  }
 }
 
 
 .Header__title {
   margin: 0;
-  padding: 10px 20px;
-  font-size: 3rem;
+  padding: 0px 20px 10px;
+  font-size: 2rem;
   color: hsl(0,100%,69%);
   font-weight: 700;
   transition: all 0.5s ease-in;
@@ -40,6 +43,7 @@
   justify-content: space-around;
   align-items: stretch;
   margin: 0 15px 0;
+  padding: 0.5em 0;
 }
 
 .Header__linkContainer {
@@ -47,11 +51,15 @@
   flex-direction: column;
   align-items: center;
   justify-content: stretch;
-  padding: 15px;
+  padding: 0.5em;
+  margin: 0 0.5em;
   color: #428bca;
   border-shadow: inset 0 0 0 2px blue;
   position: relative;
   transition: color 0.25s;
+  @media screen and (max-width: 786px) {
+    margin: 0;
+  }
 
   &::before,
   &::after {

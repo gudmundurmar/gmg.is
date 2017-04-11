@@ -20,22 +20,30 @@
   justify-content: center;
   width: 100%;
   flex-direction: row;
-  min-width: 500px;
   max-width: 1000px;
   padding: 20px;
   margin-bottom: 30px;
   border-radius: 2px;
   box-shadow: -3px 0px 0px #17baef;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
 }
 
 .Working__jobTitle {
   min-width: 300px;
   width: 50%;
   padding-right: 20px;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
 }
 
 .Working__jobDescription {
   min-width: 300px;
   width: 50%;
   padding: 70px 0px 20px;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
 }

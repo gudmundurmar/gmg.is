@@ -12,6 +12,12 @@
   margin: 1%;
   min-width: 300px;
   box-shadow: 1px 0 2px #333;
+  padding: 1em 0 4em;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    box-shadow: none;
+    border-bottom: 1px solid #eee;
+  }
 }
 
 .Practicing__image svg {
@@ -27,11 +33,12 @@
   align-items: center;
 }
 
-.Practicing__linkList {
-  list-style-type: none;
+.Practicing__link {
+  padding: 10px 0;
+  font-size: 1.2rem;
 }
 
-.Practicing__linkListItemTag {
+.Practicing__Tags {
   display: flex;
   flex-wrap: wrap;
 }
@@ -71,6 +78,7 @@
   align-items: center;
   flex-direction: column;
   position: absolute;
+  z-index: -1;
 }
 
 .Practicing__musicPlayIcon {
