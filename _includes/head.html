@@ -1,7 +1,12 @@
 <head>
   <title>{{ page.title }}</title>
   <!-- link to main stylesheet -->
+  <style type="text/css">
+    {% capture include_to_scssify %}
+      {% include stylesheet.scss %}
+    {% endcapture %}
+    {{ include_to_scssify | scssify }}
+  </style>
   <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/public/plugins/prism/min/prism.css">
   <link rel="stylesheet" href="{{site.baseurl}}/public/plugins/font-awesome/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/stylesheet.css">
 </head>
