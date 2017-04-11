@@ -2,12 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 40px;
-  padding: 40px;
-  box-shadow: -3px 0px 0px #17baef;
-  @media screen and (max-width: 768px) {
-    margin: 40px 0;
-  }
+  margin: 40px 0;
 }
 
 .Post__date {
@@ -19,6 +14,9 @@
 .Post__link {
   display: block;
   font-size: 1em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .Post__iconCalendar, .Post__iconDate {
@@ -35,6 +33,7 @@
 
 .Post__tagList {
   list-style-type: none;
+  width: 100%;
 }
 
 .Post__tag {
