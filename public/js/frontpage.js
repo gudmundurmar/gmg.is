@@ -25,7 +25,7 @@ new Vue({
   data: {
    text: 'Hello World!',
    active: "",
-   path: "/",
+   path: this.location.pathname,
    messages: [
     {
       name: "Frontpage",
@@ -69,13 +69,7 @@ new Vue({
     },
     notactive(fullpath) {
       this.active = "";
-      if (fullpath === "/") {
-        this.path = fullpath;
-        return;
-      }
-      parts = fullpath.split('/');
-      path = parts.pop() || parts.pop();
-      this.path = '/' + path + '/';
+      this.path = fullpath
     },
     clicked(e) {
       this.active = message.name;
