@@ -23,9 +23,6 @@
   margin-right: 10px;
 }
 
-.Post__iconTag {
-}
-
 .Post__listItemTags {
   display: flex;
   flex-wrap: wrap;
@@ -33,7 +30,7 @@
 
 .Post__tagList {
   list-style-type: none;
-  width: 100%;
+  max-width: 100%;
 }
 
 .Post__tag {
@@ -43,11 +40,6 @@
   padding: 5px;
   margin-right: 5px;
   margin: 10px 5px 10px 0;
-}
-
-.Post__tag:hover {
-  color: #17baef;
-  border-color: #17baef;
 }
 
 .Post__content {
