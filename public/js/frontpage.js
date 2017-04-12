@@ -21,7 +21,7 @@ var headerLinks = {
     </a>`
 };
 
-new Vue({
+var vueApp = new Vue({
   el: '#app',
   data: {
    text: 'Hello World!',
@@ -87,3 +87,14 @@ new Vue({
     }
   }
 });
+
+
+document.body.onscroll = function() {
+  var currentScrollPosition = document.body.scrollTop;
+  if (currentScrollPosition > vueApp.scrollPosition) {
+    vueApp.scrollDown = true;
+  } else {
+    vueApp.scrollDown = false;
+  }
+  vueApp.scrollPosition = currentScrollPosition;
+}
