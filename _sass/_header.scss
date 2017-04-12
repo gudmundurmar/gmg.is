@@ -17,6 +17,7 @@
   font-size:1.3rem;
   @media screen and (max-width: 786px) {
     font-size: 4vw;
+    box-shadow: none;
   }
 }
 
@@ -24,11 +25,20 @@
 .Header__title {
   margin: 0;
   padding: 0px 20px 10px;
-  font-size: 2rem;
   color: hsl(0,100%,69%);
   font-weight: 700;
   transition: all 0.5s ease-in;
+  font-size: 2rem;
+    font-size: 1em;
+    width: 100%;
+    padding-top: 10px;
+    text-align: center;
+    z-index: -1;
 }
+.Header__title--hidden {
+    margin: -2em;
+}
+
 
 .Header__cursor {
   margin-top: -0.1em;
@@ -42,8 +52,11 @@
   display: flex;
   justify-content: space-around;
   align-items: stretch;
-  margin: 0 15px 0;
-  padding: 0.5em 0;
+  padding: 0.5em 15px;
+  background-color: white;
+  @media screen and (max-width: 786px) {
+    border-bottom: solid 1px #ddd;
+  }
 }
 
 .Header__linkContainer {
@@ -57,50 +70,57 @@
   border-shadow: inset 0 0 0 2px blue;
   position: relative;
   transition: color 0.25s;
+  text-decoration: none !important;
+  outline: none !important;
+  border: none !important;
   @media screen and (max-width: 786px) {
     margin: 0;
   }
-
   &::before,
   &::after {
-    top: 0;
+    bottom: 0;
     left: 0;
-    border: 2px solid transparent;
+    border-bottom: 2px solid transparent;
     width: 0;
     height: 0;
     box-sizing: border-box;
     content: '';
     position: absolute;
-    border-radius: 3px;
+  }
+}
+
+.Header__linkContainer--current {
+  color: white !important;
+  border-color: white !important;
+  background-color: #428bca;
+  text-decoration: none !important;
+  outline: none !important;
+  border: none !important;
+  &::after {
+    color: #ccc;
   }
 }
 
 @media (pointer:fine) {
   .Header__linkContainer--active {
-    color: red;
+    color: #ff6161;
     text-decoration: none !important;
     outline: none !important;
     border: none !important;
+    padding: 0.7em 0.5em 0.3em;
   }
 
-  .Header__linkContainer--active::before,
-  .Header__linkContainer--active::after {
-    width: 100%;
-    height: 100%;
-  }
-
+  .Header__linkContainer--active::after,
   .Header__linkContainer--active::before {
-    border-top-color: red;
-    border-right-color: red;
-    transition: width 0.25s ease-out,
-      height 0.25s ease-out 0.25s;
+    width: 100%;
   }
 
-  .Header__linkContainer--active::after {
-    border-bottom-color: red;
-    border-left-color: red;
+
+  .Header__linkContainer--active::after,
+  .Header__linkContainer--active::before {
+    border-bottom-color: #ff6161;
+    border-left-color: #ff6161;
     transition: 
-      height 0.25s ease-out,
-      width 0.25s ease-out 0.25s,
+      width 0.25s ease-out;
   }
 }

@@ -1,19 +1,20 @@
 var headerLinks = {
-  props: ['message', 'active', 'isactive', 'notactive', 'clicked', 'baseurl'],
+  props: ['message', 'active', 'isactive', 'notactive', 'clicked', 'baseurl', 'current'],
   methods: {
     getBaseUrl(base, pathname) {
       return base + pathname;
     }
   },
   template: `<a
-      :href=getBaseUrl(baseurl,message.path)
+      :href="getBaseUrl(baseurl,message.path)"
       @focus="isactive(message)"
       @mouseenter="isactive(message, this)"
       @mouseleave="notactive(this.location.pathname)"
       @blur="notactive(this.location.pathname)"
-      @click="clicked"
+      @click="!current && clicked"
       v-bind:class="
-        [message.name === active ? 'Header__linkContainer--active' : '', 
+        [(message.name === active) ? 'Header__linkContainer--active' : '', 
+        current && 'Header__linkContainer--current',
         'Header__linkContainer']"
     >
       <i v-bind:class="['fa', message.icon]" aria-hidden="true"></i>{{ message.name }}
@@ -25,6 +26,7 @@ new Vue({
   data: {
    text: 'Hello World!',
    active: "",
+   scrollDown: false,
    path: this.location.pathname,
    messages: [
     {
@@ -73,6 +75,15 @@ new Vue({
     },
     clicked(e) {
       this.active = message.name;
+    },
+    handleScroll(e) {
+      var currentScrollPosition = e.srcElement.scrollTop;
+      if (currentScrollPosition > this.scrollPosition) {
+        this.scrollDown = true;
+      } else {
+        this.scrollDown = false;
+      }
+      this.scrollPosition = currentScrollPosition;
     }
   }
 });
