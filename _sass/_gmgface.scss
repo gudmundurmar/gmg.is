@@ -19,12 +19,12 @@
 }
 @keyframes raise-eyebrow {
 	20% {
-		transform: rotateZ(6deg) translateY(-7px) translateX(2px) scale(0.98);
+		transform: translateY(-7px) translateX(2px) rotateZ(2deg) scale(0.98);
 	}
 	70% {
-		transform: rotateZ(6deg) translateY(-7px) translateX(2px) scale(0.98);
+		transform: translateY(-7px) translateX(2px) rotateZ(2deg) scale(0.98);
 	}
 	90% {
-		transform: rotateZ(0deg) translateY(0px) translateX(0px) scale(1);
+		transform: translateY(0px) translateX(0px) rotateZ(0deg) scale(1);
 	}
 }
