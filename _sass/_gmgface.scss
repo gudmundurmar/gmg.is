@@ -8,3 +8,23 @@
 	stroke-opacity:1;
 	transform-origin: center bottom;
 }
+
+.GMGFace__rightEye {
+	transform-origin: center;
+	animation: raise-eyebrow 1s 2s ease-in 1;
+	animation-play-state: running;
+}
+.GMGFace__rightEye:hover {
+	animation-play-state: running;
+}
+@keyframes raise-eyebrow {
+	20% {
+		transform: rotateZ(6deg) translateY(-7px) translateX(2px) scale(0.98);
+	}
+	70% {
+		transform: rotateZ(6deg) translateY(-7px) translateX(2px) scale(0.98);
+	}
+	90% {
+		transform: rotateZ(0deg) translateY(0px) translateX(0px) scale(1);
+	}
+}

@@ -8,43 +8,43 @@
 	stroke-linejoin:miter;
 	stroke-opacity:1;
 	transform-origin: center bottom;
-	animation: wave 0.7s 2s linear 1;
+	animation: wave 0.7s 0s linear infinite;
+	animation-play-state: paused; 
+}
+.Hand:hover {
+	animation-play-state: running;
 }
 
-.Hand:hover {
-	animation: wave 1s linear 1;
-	animation-direction: alternate;
-}
 
 .Hand__pinkyFingerTip,
 .Hand__ringFingerTip,
 .Hand__middleFingerTip {
-	animation: bend-finger-tips 10s ease-in 1;
-	animation-delay: 7s;
+	animation: bend-finger-tips 3s ease-in 1;
+	animation-delay: 5s;
 	transform-origin: center bottom;
 }
 
 .Hand__pinkyFingerCenter,
 .Hand__ringFingerCenter,
 .Hand__middleFingerCenter {
-	animation: bend-finger 10s ease-in 1;
-	animation-delay: 7s;
+	animation: bend-finger 3s ease-in 1;
+	animation-delay: 5s;
 	transform-origin: center bottom;
 }
 @keyframes bend-finger-tips {
-	1% {
+	5% {
 		transform: translateY(75px) scale(0.8) rotateX(170deg) rotateZ(-20deg) translateX(-45px);
 	}
-	90% {
+	95% {
 		transform: translateY(75px) scale(0.8) rotateX(170deg) rotateZ(-20deg) translateX(-45px);
 	}
 }
 
 @keyframes bend-finger {
-	1% {
+	5% {
 		transform: scale(0.8) rotateX(80deg) rotateZ(-20deg);
 	}
-	70% {
+	80% {
 		transform: scale(0.8) rotateX(80deg) rotateZ(-20deg);
 	}
 }
