@@ -1,0 +1,20 @@
+
+/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+   readers do not read off random characters that represent icons */
+
+.#{$fa-css-prefix}-play:before { content: $fa-var-play; }
+.#{$fa-css-prefix}-font:before { content: $fa-var-font; }
+.#{$fa-css-prefix}-bullhorn:before { content: $fa-var-bullhorn; }
+.#{$fa-css-prefix}-at:before { content: $fa-var-at; }
+.#{$fa-css-prefix}-link:before { content: $fa-var-link; }
+.#{$fa-css-prefix}-tag:before { content: $fa-var-tag; }
+.#{$fa-css-prefix}-calendar:before { content: $fa-var-calendar; }
+.#{$fa-css-prefix}-cloud:before { content: $fa-var-cloud; }
+.#{$fa-css-prefix}-briefcase:before { content: $fa-var-briefcase; }
+.#{$fa-css-prefix}-file-text:before { content: $fa-var-file-text; }
+.#{$fa-css-prefix}-home:before { content: $fa-var-home; }
+.#{$fa-css-prefix}-github:before { content: $fa-var-github; }
+.#{$fa-css-prefix}-twitter:before { content: $fa-var-twitter; }
+.#{$fa-css-prefix}-envelope:before { content: $fa-var-envelope; }
+.#{$fa-css-prefix}-info:before { content: $fa-var-info; }
+.#{$fa-css-prefix}-external-link:before { content: $fa-var-external-link; }
