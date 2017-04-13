@@ -75,22 +75,13 @@ var vueApp = new Vue({
     },
     clicked(e) {
       this.active = message.name;
-    },
-    handleScroll(e) {
-      var currentScrollPosition = e.srcElement.scrollTop;
-      if (currentScrollPosition > this.scrollPosition) {
-        this.scrollDown = true;
-      } else {
-        this.scrollDown = false;
-      }
-      this.scrollPosition = currentScrollPosition;
     }
   }
 });
 
 
 document.body.onscroll = function() {
-  var currentScrollPosition = document.body.scrollTop;
+  var currentScrollPosition = window.pageYOffset;
   if (currentScrollPosition > vueApp.scrollPosition) {
     vueApp.scrollDown = true;
   } else {
