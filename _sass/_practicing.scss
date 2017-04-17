@@ -24,7 +24,7 @@
   padding: 10px 0;
   padding-right: 20px;
   height: 100px;
-  fill: #428bca;
+  fill: $primary-color;
 }
 
 .Practicing__imageAndLinkContainer {
@@ -52,8 +52,8 @@
 }
 
 .Practicing__tag {
-  color: #428bca;
-  border: #428bca solid 1px;
+  color: $primary-color;
+  border: $primary-color solid 1px;
   padding: 3px;
   margin: 3px;
   border-radius: 3px;
@@ -105,7 +105,7 @@
   );
   height: 10px;
   width: 100px;
-  background-color: #428bca;
+  background-color: $primary-color;
   border-color: #eee;
 }
 

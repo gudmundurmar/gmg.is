@@ -8,14 +8,14 @@
 
 .Tags__listItem {
   border-radius: 3px;
-  border: solid 1px #428bca;
-  color: #428bca;
+  border: solid 1px $primary-color;
+  color: $primary-color;
   padding: 5px;
   margin-right: 5px;
   margin: 5px 5px 5px 0;
 }
 
 .Tags__listItem:hover {
-  color: #17baef;
-  border-color: #17baef;
+  color: $secondary-color;
+  border-color: $secondary-color;
 }
