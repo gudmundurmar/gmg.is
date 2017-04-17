@@ -5,7 +5,7 @@ kramdown:
 permalink: /thinking/:year/:month/:day/:title
 url:
   "https://www.gmg.is"
-gems: [jekyll-livereload]
+gems: [jekyll-livereload, jekyll-sitemap, jekyll-feed]
 collections:
 - lists
 tag_page: '/thinking/tags/'

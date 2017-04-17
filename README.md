@@ -9,3 +9,4 @@ To run project with live reload just type `jekyll serve -L --watch`
 
 Bundle also installed when running 
 - jekyll-sitemap: https://help.github.com/articles/sitemaps-for-github-pages/
+- jekyll-feed: https://help.github.com/articles/sitemaps-for-github-pages/
