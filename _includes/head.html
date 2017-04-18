@@ -1,5 +1,4 @@
 <head>
-  <title>{{ page.title }}</title>
   <!-- link to main stylesheet -->
   <style type="text/css">
     {% capture include_to_scssify %}
@@ -7,7 +6,7 @@
     {% endcapture %}
     {{ include_to_scssify | scssify }}
   </style>
-  <title>GMG.is</title>
+  <title>{{include.title}}</title>
   <meta charset="utf-8">
   <meta name="author" content="Guðmundur Már Gunnarsson">
   <meta name="description" content="Personal website. A place for me to mess with, break, and try new things on the internet">

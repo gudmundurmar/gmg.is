@@ -7,7 +7,7 @@ url:
   "https://www.gmg.is"
 gems: [jekyll-livereload, jekyll-sitemap, jekyll-feed]
 collections:
-- lists
+  - lists
 tag_page: '/thinking/tags/'
 category_page: '/thinking/categories/'
 sass:

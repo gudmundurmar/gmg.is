@@ -1,15 +1,16 @@
 ---
 layout: default
-title: GMG.is/practicing
+title: GMG is practicing
 ---
 
-<div class="Practicing">
-  
+<h1>Personal projects and doodles</h1>
+<p>I'll just put a few things I'm working on for fun. Maybe I'll put other things later. Only time can tell.</p>
+<article class="Practicing">  
   {% for project in site.posts%}
     {% if project.category == 'Projects' %}
-      <div class="Practicing__project">
+      <section class="Practicing__project">
         <div class="Practicing__titleContainer">
-          <h1>{{ project.title }}</h1>
+          <h1 class="Practicing__title">{{ project.title }}</h1>
           <div class="Practicing__imageAndLinkContainer">
             {% if project.image %}
               <div class="Practicing__image">
@@ -17,14 +18,15 @@ title: GMG.is/practicing
               </div>
             {% endif %}
             {% if project.link %}
-              <a class="Practicing__link" href={{ project.link }} target="_blank"><i class="fa fa-link" aria-hidden="true"></i> Link to {{project.title}}</a>
+              <a class="Practicing__link" href={{ project.link }}><i class="fa fa-external-link" aria-hidden="true"></i> Link to {{project.title}}
+              </a>
             {% endif %}
           </div>
         </div>
         <div class="Practicing__contactContainer">
           {{ project.content }}
         </div>
-        <div class="Practicing__Tags">
+        <div class="Practicing__tags">
           {% for tag in project.tags%}
             <a href="{{ site.baseurl }}{{ site.tag_page }}#{{ tag | slugify }}" class="Practicing__tag">
               <i class="fa fa-tag Practicing__iconTag" aria-hidden='true'></i>
@@ -32,8 +34,7 @@ title: GMG.is/practicing
             </a>
           {% endfor %}
         </div>
-      </div>
+      </section>
     {% endif %}
   {% endfor %}
-  
-</div>
+</article>

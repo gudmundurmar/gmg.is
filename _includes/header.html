@@ -4,8 +4,8 @@
     </header-links>
   </ul>
   {% if page.url != '/' %}
-    <h1 v-bind:class="['Header__title', !this.scrollDown && 'Header__title--hidden', false && 'Header--topbar']">
+    <div v-bind:class="['Header__title', !this.scrollDown && 'Header__title--hidden', false && 'Header--topbar']">
       GMG.is{%raw%}{{ path }}{%endraw%}<span class="Header__cursor">|</span>
-    </h1>
+    </div>
   {% endif %}
 </header>
