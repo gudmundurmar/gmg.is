@@ -6,21 +6,43 @@
 .Practicing__project {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   width: 48%;
   margin: 1%;
   min-width: 300px;
   box-shadow: 1px 0 2px #333;
-  padding: 0em 0 4em;
+  padding: 2em 2em 4em;
   @media screen and (max-width: 768px) {
     width: 100%;
     box-shadow: none;
-    border-bottom: 1px solid #eee;
+    border-top: 1px solid #eee;
+    padding: 2em 0 2em;
   }
 }
-.Practicing__title {
+
+.Practicing__project:first-child {
+  @media screen and (max-width: 768px) {
+    border-top: none;
+  }
+}
+
+.Practicing__projectTitle {
   font-size: 2rem;
+}
+
+.Practicing__titleContainer {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 2em;
+}
+
+.Practicing__title {
+  color: $darker-accent-color;
+}
+
+.Practicing__subtext {
+  font-size: 1.1rem;
 }
 
 .Practicing__image svg {
@@ -46,7 +68,7 @@
   flex-wrap: wrap;
 }
 
-.Practicing__titleContainer, .Practicing__contactContainer {
+.Practicing__projectTitleContainer, .Practicing__contactContainer {
   display: flex;
   flex-direction: column;
   align-items: center;

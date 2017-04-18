@@ -3,14 +3,16 @@ layout: default
 title: GMG is practicing
 ---
 
-<h1>Personal projects and doodles</h1>
-<p>I'll just put a few things I'm working on for fun. Maybe I'll put other things later. Only time can tell.</p>
-<article class="Practicing">  
+<article class="Practicing">
+  <div class="Practicing__titleContainer">
+    <h1 class="Practicing__title">Personal projects and doodles</h1>
+    <p class="Practicing__subtext">I'll just put a few things I'm working on for fun. Maybe I'll put other things later. Only time can tell.</p>
+  </div>
   {% for project in site.posts%}
     {% if project.category == 'Projects' %}
       <section class="Practicing__project">
-        <div class="Practicing__titleContainer">
-          <h1 class="Practicing__title">{{ project.title }}</h1>
+        <div class="Practicing__projectTitleContainer">
+          <h1 class="Practicing__projectTitle">{{ project.title }}</h1>
           <div class="Practicing__imageAndLinkContainer">
             {% if project.image %}
               <div class="Practicing__image">
