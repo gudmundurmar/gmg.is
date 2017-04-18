@@ -5,14 +5,22 @@
   flex-direction: column;
 }
 
-.About__nameContainer {
+.About__section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; 
+}
+
+.About__nameContainer, .About__activityContainer {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  margin: 3em 0;
 }
 
-.About__name {
-  flex-basis: 25%;
+.About__name, .About__activity {
+  flex-basis: 29%;
   padding: 20px;
   background-color: white;
   @media screen and (max-width: 768px) {
@@ -25,18 +33,24 @@
 .About__title {
   font-size: 1.5em;
   float: left;
+  color: $darker-accent-color;
+}
+.About__subtext {
+  font-size: 1.1rem;
 }
 
 .About__icon {
   font-size: 1.4em;
   margin-right: 10px;
+  color: $secondary-color;
 }
 
-.About__nameTitle {
+.About__nameTitle, .About__activityTitle {
   font-size: 1.3em;
+  color: $secondary-color;
 }
 
-.About__nameTitleContainer {
+.About__nameTitleContainer, .About__activityTitleContainer {
   display: flex;
   align-items: center;
   padding-bottom: 15px;
