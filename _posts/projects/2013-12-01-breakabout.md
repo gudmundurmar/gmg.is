@@ -1,4 +1,5 @@
 ---
+layout: project
 title: BreakAbout
 category: Projects
 tags: [canvas, vanilla-js, desktop, university-project]

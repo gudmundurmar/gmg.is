@@ -9,7 +9,7 @@ title: GMG is thinking
     I feel it's sometimes better to be able to write down what is on your mind even when no one reads it. Therefore these thoughts are really just meant for me thinking out loud. I might put some opinions here, but bear in mind that feelings change faster than sites update their content. I've actually already written a few thoughts on the difficulties of being <a href="/blog/2017/03/23/opinions-of-a-private-person">a private person stating their opinions on the internet already</a>. In a world where <a href="https://thinkprogress.org/why-theres-no-such-thing-as-a-private-facebook-chat-3d590b7705b3" target="_blank">personal information isn't private</a>, and there's <a href="https://arstechnica.com/security/2016/06/aiming-for-anonymity-ars-assesses-the-state-of-vpns-in-2016/" target="_blank">no foolproof way to save it</a>. How can people change their mind, admit mistakes, or aknowlegde good work following their mistakes if the internet doesn't give you an update on the stories you read. Then there's no incentive for change? That's why I'm doing this as an experiment. At best no one will read this :). At worst my life will <a href="https://www.youtube.com/watch?v=pCkL9UlmCOE" target="_blank">be dumbed down into a simplified headline and overshaddowing the rest of my story. Creating it's own "true" narrative right before my eyes</a>.
   </p>
   {% for post in site.posts %}
-    {% unless post.category == 'Projects' %}
+    {% if post.category == 'Thoughts' %}
     <div class="Post">
 
       <h1>{{ post.title }} </h1>
@@ -34,6 +34,6 @@ title: GMG is thinking
 
       <p class="Post__content">{{ post.content }}</p>
     </div>
-    {% endunless %}
+    {% endif %}
   {% endfor %}
 </div>

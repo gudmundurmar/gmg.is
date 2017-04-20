@@ -1,13 +1,11 @@
 name: Gudmundur Mar Gunnarsson
-markdown: kramdown
-kramdown:
-  input: GFM
-permalink: /thinking/:year/:month/:day/:title
+permalink: /:categories/:year/:month/:day/:title
 url:
   "https://www.gmg.is"
 gems: [jekyll-livereload, jekyll-sitemap, jekyll-feed]
 collections:
   - lists
+  - my-site
 tag_page: '/thinking/tags/'
 category_page: '/thinking/categories/'
 sass:

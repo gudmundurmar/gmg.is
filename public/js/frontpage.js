@@ -82,7 +82,6 @@ var vueApp = new Vue({
 
 document.body.onscroll = function() {
   var currentScrollPosition = window.pageYOffset;
-  console.log('what', currentScrollPosition, vueApp.scrollPosition);
   if (currentScrollPosition > vueApp.scrollPosition) {
     vueApp.scrollDown = true;
   } else {

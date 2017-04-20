@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Opinions"
+category: Thoughts
 subtitle: "Problems of being a private person in the age of the internet"
 date: 2017-03-23
 tags: [thoughts, privacy]

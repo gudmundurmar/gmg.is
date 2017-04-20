@@ -20,7 +20,12 @@ title: GMG is practicing
               </div>
             {% endif %}
             {% if project.link %}
-              <a class="Practicing__link" href={{ project.link }}><i class="fa fa-external-link" aria-hidden="true"></i> Link to {{project.title}}
+              <a class="Practicing__link" href={{ project.link }}><i class="fa fa-external-link" aria-hidden="true"></i>
+              {%if project.linktext %}
+                {{project.linktext}}
+              {% else %}
+                Link to {{project.title}}
+              {% endif %}
               </a>
             {% endif %}
           </div>
