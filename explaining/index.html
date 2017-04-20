@@ -1,0 +1,14 @@
+---
+layout: default
+title: Making your own site
+---
+
+<div class="Explaining">
+  <h1 class="Explaining__title">How to...</h1>
+  <p class="Explaining__subtext">Here I'm going to try to put articles about how I made this site, and how you can make one too.</p>
+  {% for post in site.posts %}
+    {% if post.category == "How-to"%}
+      {{ post.content }}
+    {% endif %}
+  {% endfor %}
+</div>

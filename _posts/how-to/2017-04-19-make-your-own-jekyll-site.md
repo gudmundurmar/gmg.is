@@ -1,7 +1,7 @@
 ---
-layout: makeasite
+layout: howto
 title: "Making your personal Gihub site using Jekyll"
-category: Make-a-site
+category: How-to
 subtitle: "A little bit about how to get started with a Jekyll page"
 date: 2016-10-04
 tags: [Jekyll, Github, SVG, Liquid, gmg.is]
@@ -9,6 +9,7 @@ tags: [Jekyll, Github, SVG, Liquid, gmg.is]
 ---
 
 # Making your own Jekyll site on Github
+*Date published: 2016-10-04*
 
 ## Setting up your site
 
@@ -32,7 +33,7 @@ ERROR: Failed to build gem native extension.
 
 
 What ended up saving me was this github issue:[gem install jekyll failed on Mac OS X 10.11](https://github.com/jekyll/jekyll/issues/3984)
-I used an anwer from [fulldecent commented on Sep 22, 2015](https://github.com/jekyll/jekyll/issues/3984#issuecomment-142352884)
+I used an answer from [fulldecent commented on Sep 22, 2015](https://github.com/jekyll/jekyll/issues/3984#issuecomment-142352884)
 ```markup
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew install ruby

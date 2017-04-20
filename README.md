@@ -18,3 +18,4 @@ I set up a small tutorial on how to get started with your own site.
 
 - [ ] Fix tags page
 - [ ] Make www.gmg.is work correctly
+- [ ] Make a Progressive web app (PWA) for offline capability
