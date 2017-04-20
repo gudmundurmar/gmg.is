@@ -130,8 +130,7 @@ Remember to restart always your site after you add something to your _config.yml
 
 Jekyll also uses a templating language called Liquid. It might be good to check out the [Liquid documentation](https://shopify.github.io/liquid/)
 
-- Looping in liquid
-https://learn.cloudcannon.com/jekyll/looping-in-liquid/
+- [Looping in Liquid](https://learn.cloudcannon.com/jekyll/looping-in-liquid/)
 
 - Collections: I don't always want to add dates to my posts. In that case you might be looking for Collections. [Add collections to your site](https://jekyllrb.com/docs/collections/)
 
