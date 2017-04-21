@@ -1,8 +1,8 @@
 <header class="Header">
-  <ul class="Header__menu">
+  <nav class="Header__menu">
     <header-links v-for="message in messages" :current="message.path == this.location.pathname" :message='message' :isactive='isactive' :notactive='notactive' :clicked='clicked' :active='active' baseurl="{{site.baseurl}}">
     </header-links>
-  </ul>
+  </nav>
   {% if page.url != '/' %}
     <div v-bind:class="['Header__title', !this.scrollDown && 'Header__title--hidden', false && 'Header--topbar']">
       GMG.is{%raw%}{{ path }}{%endraw%}<span class="Header__cursor">|</span>
