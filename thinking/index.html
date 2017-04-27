@@ -17,7 +17,7 @@ title: GMG is thinking
         <li class="Post__date"><i class="fa fa-calendar Post__iconDate" aria-hidden='true'></i> {{ post.date | date_to_string }}</li>
         <li>
           <a class="Post__link" href="{{ post.url }}" title="{{ post.title }}">
-            <i class="fa fa-link Post__iconCalendar" aria-hidden='true'></i> {{site.url}}{{ post.url}}
+            <i class="fa fa-link Post__iconCalendar" aria-hidden='true'></i> Deeplink to post {{ post.title }}
           </a>
         </li>
         {% if post.tags %}
