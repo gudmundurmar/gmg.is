@@ -1,5 +1,5 @@
 <header class="Header">
-  <nav class="Header__menu">
+  <nav class="Header__menu" aria-label="Site">
     <header-links v-for="message in messages" :current="message.path == this.location.pathname" :message='message' :isactive='isactive' :notactive='notactive' :clicked='clicked' :active='active' baseurl="{{site.baseurl}}">
     </header-links>
   </nav>

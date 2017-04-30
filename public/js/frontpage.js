@@ -18,6 +18,7 @@ var headerLinks = {
         'Header__linkContainer']"
     >
       <i v-bind:class="['fa', message.icon]" aria-hidden="true"></i>{{ message.name }}
+      <span class="screenreader-only" v-if=current>- current</span>
     </a>`
 };
 

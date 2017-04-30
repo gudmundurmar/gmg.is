@@ -52,6 +52,14 @@ a:visited {
     padding: 8em 30px 40px;
   }
 }
+.screenreader-only {
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
 
 @keyframes cursor-blink {
   0% {
