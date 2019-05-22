@@ -1,0 +1,55 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<style type="text/css">
+  p {
+    font-size: 5em;
+  }
+  a { 
+    font-size: 3rem;
+  }
+  table a {
+    font-size: 1rem;
+  }
+  table, th, td {
+    font-size: 1rem;
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 0.7em;
+  }
+  li > * {
+    font-size: 3rem;
+  }
+  i, em {
+    font-size: 2rem;
+  }
+  input {
+    font-size: 5rem;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(auto, auto));
+    grid-gap: 10px;
+  }
+  .grid-white > * {
+    background-color: white;
+  }
+  .grid > * {
+    padding: 10px;
+  }
+</style>
+{% include head.html title=page.title %}
+<html lang='en' style="height: initial;">
+  <body style="background: linear-gradient(hsl(0,100%,98%) 0%, hsl(0,100%,81%) 100%) /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */">
+    <div id="app">
+    <div id="content">
+      {{ content }}
+    </div>
+    </div>
+    <script type="text/javascript" src="{{site.baseurl}}/public/plugins/vue/vue.min.js"></script>
+    <script type="text/javascript" src="{{site.baseurl}}/public/js/frontpage.js"></script>
+    <script type="text/javascript" src="{{site.baseurl}}/public/plugins/prism/min/prism-min.js"></script>
+  </body>
+</html>
