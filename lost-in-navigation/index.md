@@ -310,7 +310,7 @@ Seen in old phones with out a touchscreen and TVs when browsing<br/>
   <em>Press alt + ⬇️ key</em>
 </p>
 
-First lets try Blink/Chromium spatial navigation
+_Try both Blink/Chromium spatial navigation and Vivaldi spatial navigation in Vivaldi._
 
 1. Open settings <a href="vivaldi://settings">vivaldi://settings</a>
 
@@ -319,9 +319,17 @@ First lets try Blink/Chromium spatial navigation
 3. We'll need to open the site in a different tab because we need a new renderer.
 
 
-_Try to navigate through this site again using shift + arrow keys_
-
-Notice how the focus matches the look of the site itself. This
+<p style="font-size: 2rem">
+  The main difference between the two currently is that Blink's spatial navigation only uses the arrow keys and doesn't have its own focus border style (uses the always pages' focus style)<br/>
+  <br/>
+  This has the effect that you'll end up in trouble when using it to navigate inputs (will jump out of inputs), breaks the alt + arrow scroll functionality and can be hard to see because it's constantly changing.<br/>
+  <br/>
+  Vivaldi spatial navigation uses it's own focus color and uses Shift + arrow keys.<br/>
+  <br/>
+  The new <a href="https://drafts.csswg.org/css-nav-1/">spec for Spatial Navigation</a> does allow the User Agent (Vivaldi in this case) to use other keys like shift + arrow keys for spatial navigation (see example #4 in the spec draft)<br/>
+  <br/>
+  The focus style issue is however not aknowledged at the moment. The user agent vs the author of the webpage. We're currently working to try to get that in the spec too.<br/>
+</p>
 
 
 _Once you get here you can try to navigate to the X here below using spatial navigation_
@@ -348,17 +356,17 @@ _Once you get here you can try to navigate to the X here below using spatial nav
 _ALT + ⬇️ key when you're done_
 <div style="height: 30vh"></div>
 ## Final words...
+<p style="font-size: 2rem">
+  All browsers are going to handle a little bit differently.<br/>
+  It would be smart to check out some of the features it has and customize to your needs.<br/>
+  <br/>
+  So if we take Vivaldi for example it has<br/>
+</p>
 
-All browsers are going to handle a little bit differently.
+1. Customizable keyboard shortcuts and single key shortcuts (in <a style="font-size:2rem" href="vivaldi://settings"> Settings</a> -> Keyboard category)
 
-It would be smart to check out some of the features it has and customize to your needs.
+2. Mouse Gestures (in <a style="font-size:2rem" href="vivaldi://settings">Settings</a> -> Mouse category) to name a few.
 
-So if we take Vivaldi for example it has 
-
-1. <a href="vivaldi://settings">Customizable keyboard shortcuts</a> (even single key shortcuts)
-2. <a href="vivaldi://settings">Mouse Gestures</a> to name a few.
-
-_ALT + ⬇️ key when you're done_
 <div style="height: 30vh"></div>
 <p style="height: 100vh">
   We will all get lost.<br/>
